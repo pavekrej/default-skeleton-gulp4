@@ -1,0 +1,51 @@
+/*
+
+--- GLOBAL ---
+
+ */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    @include font-size-base;
+}
+
+body {
+    background-color: $color-light;
+    font-family: $font-base;
+    font-size: 1.8rem; // 18px
+}
+
+a {
+    text-decoration: underline;
+    color: $color-link;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+::selection {
+    color: $color-light;
+    background: $color-base;
+}
+
+pre {
+    display: block;
+    box-sizing: border-box;
+    background-color: $color-debug;
+    color: $color-light;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: left;
+    margin: 1rem 0;
+
+    a:link {
+        color: $color-light;
+    }
+}

@@ -1,0 +1,26 @@
+/*
+
+--- HEADLINE ---
+
+ */
+
+.headline {
+    background: url('../images/headline/headline-2.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    color: $color-light;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.headline--homepage {
+    min-height: 45vh;
+}
+
+.headline__title {
+    font-size: 4rem;
+    font-weight: 500;
+}

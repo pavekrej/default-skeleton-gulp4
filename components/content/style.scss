@@ -1,0 +1,20 @@
+/*
+
+--- CONTENT ---
+
+ */
+
+.content {
+    @include container;
+
+    padding: 5rem 0;
+    max-width: 1180px;
+}
+
+.content__group {
+    padding: 2rem 0;
+}
+
+.content__item {
+    padding: 1rem 0;
+}

@@ -1,0 +1,65 @@
+/*
+
+--- VARIABLES ---
+
+ */
+
+// ----------------------------- Colors
+$color-base: #111111;
+
+$color-primary: #dddddd;
+$color-secondary: #f1f2f3;
+$color-tertiary: #f1f2f3;
+$color-quaternary: #f1f2f3;
+$color-fifth: #f1f2f3;
+
+// Classic
+$color-light: #ffffff;
+$color-dark: #000000;
+
+// Link
+$color-link: #111111;
+
+// Debug
+$color-debug: #111111;
+
+// Gray
+$color-gray-90: rgba($color-base, 0.9);
+$color-gray-80: rgba($color-base, 0.8);
+$color-gray-70: rgba($color-base, 0.7);
+$color-gray-60: rgba($color-base, 0.6);
+$color-gray-50: rgba($color-base, 0.5);
+$color-gray-40: rgba($color-base, 0.4);
+$color-gray-30: rgba($color-base, 0.3);
+$color-gray-20: rgba($color-base, 0.2);
+$color-gray-10: rgba($color-base, 0.1);
+
+// ----------------------------- Fonts
+$font-base: 'Roboto', sans-serif;
+
+// ----------------------------- Breakpoints
+$bp-xs: 480px;
+$bp-sm: 576px;
+$bp-sm-max: 575px;
+$bp-md: 768px;
+$bp-md-max: 767px;
+$bp-lg: 992px;
+$bp-lg-max: 991px;
+$bp-xl: 1200px;
+$bp-xl-max: 1199px;
+$bp-xxl: 1500px;
+
+// ----------------------------- Custom breakpoints
+$bp-min-browser-width: 320px;
+
+// ----------------------------- Container
+$container-max-size: 1180px;
+
+// ----------------------------- Animations
+// https://easings.net
+// Example of transition: transition: fill @easeTimeSlow @ease-out-quart;
+
+$ease-out-quart: 'cubic-bezier(0.165, 0.84, 0.44, 1)';
+$ease-in-out: ease-in-out;
+$ease-time-base: 0.3s;
+$ease-time-500: 0.5s;

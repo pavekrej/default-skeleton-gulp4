@@ -1,0 +1,35 @@
+/*
+
+--- FUNCTIONS ---
+
+ */
+
+// ----------------------------- Container
+@mixin container {
+    max-width: $container-max-size;
+    margin: 0 auto;
+}
+
+// ----------------------------- Fonts
+// https://css-tricks.com/snippets/css/fluid-typography/
+// font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+
+@mixin font-size-base {
+    // [Fluid font size from 320px to 1500px]
+    font-size: 7.77px; // +/- 14px (13.98px)
+
+    @media screen and (min-width: $bp-min-browser-width) {
+        font-size: calc(7.77px + 2.225 * ((100vw - 320px) / 1180));
+    }
+
+    @media screen and (min-width: $bp-xxl) {
+        font-size: 10px; // 18px
+    }
+}
+
+// ----------------------------- Others
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

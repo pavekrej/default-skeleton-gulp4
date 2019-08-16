@@ -1,0 +1,31 @@
+#
+# .HTACCESS
+#
+
+RewriteEngine On
+RewriteBase /
+
+# --- REDIRECT to https:// ---
+#RewriteCond %{HTTPS} !=on # [Production]
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] # [Production]
+
+# --- REDIRECT index.php to domain ---
+RewriteRule ^index.php$ http://default-skeleton-gulp4:81/$1 [R=301] # [Localhost]
+#RewriteRule ^index.php$ https://www.delamweby.cz/$1 [R=301] # [Production]
+
+# --- REDIRECT TO WWW. VERSION ---
+#RewriteCond %{HTTP_HOST} ^delamweby.cz [NC] # [Production]
+#RewriteRule (.*) https://www.delamweby.cz/$1 [R=301,L] # [Production]
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# --- REDIRECTIONS ---
+# ?page=slug-page => slug-page/
+RewriteRule ^([^/]+)/?$ ?page=$1
+
+# ?language=slug-language&page=slug-page => slug-language/slug-page/
+RewriteRule ^([^/]+)/([^/]+)?/?$ ?language=$1&page=$2
+
+# --- ERRORS ---
+ErrorDocument 404 /

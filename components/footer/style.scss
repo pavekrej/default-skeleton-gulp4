@@ -1,0 +1,26 @@
+/*
+
+--- FOOTER ---
+
+ */
+
+.footer {
+    @include container;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5rem 0;
+}
+
+.footer__item {
+    margin: 0 2rem;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.footer__item--description {
+    font-size: 1.4rem;
+    color: $color-gray-50;
+}

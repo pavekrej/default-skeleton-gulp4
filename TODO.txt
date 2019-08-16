@@ -1,0 +1,80 @@
+/**
+ * TODO
+ */
+
+/* --- PHP --- */
+[x] Revision - application
+[x] Revision - comments
+[x] Revision - function.php
+[x] Revision - index
+[x] Revision - index template function
+[x] Nice url - .htaccess
+[x] Correct language slug
+[x] Function comments
+[x] EDGE cant load page
+[x] Try template at hosting
+[x] Robots.txt
+[x] Run website from mobile
+[x] Ports
+[x] Default language bar
+[x] Default menu
+[x] Default naming
+
+----------------------------------
+
+/* --- GULPFILE --- */
+[x] Languages
+[x] Images compile
+[x] Prettier at IDE
+[x] Stylelint
+[x] Update image task - folder
+[x] Update image task - minify
+[x] Vendors CSS - same as components
+[x] JS compile components
+[x] Vendors JS - same as components
+
+----------------------------------
+
+/* --- HTML/CSS/JS --- */
+
+[x] Variables revision
+[x] Default header
+[x] FB share
+
+[ ] Default favicons
+[ ] Default color theme
+[ ] 404 component
+[ ] Flexible font size
+
+[ ] Example vendor image
+[ ] Header
+[ ] Refactor message component - REM, naming etc
+
+[ ] Typography page + base typography
+[ ] Component - Buttons
+
+// FUTURE
+[ ] Default menu
+
+----------------------------------
+
+/* --- FUTURE --- */
+
+[x] HTTPS
+[x] .htaccess same slug as directory name fix
+[ ] Test IE11 JS scripts
+
+[ ] AMP
+[ ] ESLint
+[ ] Generate automatic favicons
+[ ] Npm - copy assets and images
+[ ] Language switch to similar page
+[ ] JS languages
+
+----------------------------------
+
+/* --- STUDY --- */
+
+- study JS compile packages
+- .htaccess book
+- AMP book

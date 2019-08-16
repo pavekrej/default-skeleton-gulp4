@@ -1,0 +1,46 @@
+/*
+
+--- HEADER ---
+
+ */
+
+.header {
+    @include container;
+
+    padding: 2rem;
+}
+
+.header__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.navigation__container {
+    display: flex;
+    align-items: baseline;
+    padding-top: 2rem;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 3.5rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.header__title {
+    display: flex;
+    justify-content: center;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.header__link {
+    text-decoration: none;
+}
+
+.header__subtitle {
+    font-size: 1.4rem;
+    color: $color-gray-50;
+    margin-left: 1rem;
+}

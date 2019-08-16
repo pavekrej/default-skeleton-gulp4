@@ -1,0 +1,33 @@
+/*
+
+--- LANGUAGE ---
+
+ */
+
+.language {
+
+}
+
+.language__list {
+    @include reset-list;
+
+    display: flex;
+    justify-content: center;
+}
+
+.language__item {
+    margin: 0 1rem;
+}
+
+.language__item-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.language__item-link--active {
+    font-weight: 700;
+}

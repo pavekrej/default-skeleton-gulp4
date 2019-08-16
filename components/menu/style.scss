@@ -1,0 +1,36 @@
+/*
+
+--- HEADER ---
+
+ */
+
+.menu {
+    text-align: center;
+}
+
+.menu__list {
+    @include reset-list;
+
+    display: flex;
+    justify-content: center;
+}
+
+.menu__item {
+    margin: 0 2rem;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.menu__item-link {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.menu__item-link--active {
+    font-weight: 700;
+}

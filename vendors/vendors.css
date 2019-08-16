@@ -1,0 +1,11 @@
+/*
+
+--- VENDORS ---
+
+ */
+
+/* ----------------------------- Reboot (CSS reset) */
+@import '../node_modules/bootstrap/dist/css/bootstrap-reboot.css';
+
+/* ----------------------------- Example vendor */
+@import 'example-vendor/style.css';
