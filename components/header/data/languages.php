@@ -10,9 +10,6 @@ $languages = [
     ],
     'en' => [
         'title' => 'DELAMWEBY.cz'
-    ],
-    'sk' => [
-        'title' => 'DELAMWEBY.cz SK'
     ]
 ];
 ?>

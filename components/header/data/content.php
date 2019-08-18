@@ -10,9 +10,6 @@ $content = [
     ],
     'en' => [
         'description' => 'Front-end devstack template'
-    ],
-    'sk' => [
-        'description' => 'Front-end devstack template SK'
     ]
 ];
 ?>

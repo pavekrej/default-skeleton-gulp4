@@ -5,7 +5,7 @@
 
 if(!empty($data['type']) && (!empty($data['languages']['title']) || !empty($item['languages']['text']))) {
     ?>
-    <div class="message message--<?php echo $data['type']; ?>">
+    <div class="message message__<?php echo $data['type']; ?>">
         <input type="checkbox" id="message-<?php echo $data['id']; ?>">
         <label for="message-<?php echo $data['id']; ?>"></label>
         <i></i>

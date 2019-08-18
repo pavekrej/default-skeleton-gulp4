@@ -5,7 +5,7 @@
 
 // Global config
 $config = [
-    'isDevelopEnvironment'  => false,
+    'isDevelopEnvironment'  => true,
     'version'               => '1.0.1',
     'themeUrl'              => '/',
     'languages'             => [
@@ -14,9 +14,6 @@ $config = [
         ],
         'cs' => [
             'title' => 'CS'
-        ],
-        'sk' => [
-            'title' => 'SK'
         ]
     ],
     'domain'                => 'https://www.delamweby.cz/',

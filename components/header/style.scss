@@ -5,14 +5,12 @@
  */
 
 .header {
-    @include container;
-
-    padding: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .header__container {
-    display: flex;
-    align-items: baseline;
+    //aaa
 }
 
 .navigation__container {
@@ -29,9 +27,6 @@
 }
 
 .header__title {
-    display: flex;
-    justify-content: center;
-    line-height: 1.4;
     margin: 0;
 }
 

@@ -5,16 +5,20 @@
  */
 
 .footer {
-    @include container;
+    background-color: $color-gray-10;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
 
+.footer__container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 5rem 0;
 }
 
 .footer__item {
     margin: 0 2rem;
+
     &:first-child {
         margin-left: 0;
     }

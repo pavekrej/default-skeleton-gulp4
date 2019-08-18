@@ -5,16 +5,75 @@
  */
 
 .content {
-    @include container;
+    line-height: 1.75;
+    margin-bottom: $spacing-large;
 
-    padding: 5rem 0;
-    max-width: 1180px;
+    // ----------------------------- Typography - Others
+    a {
+        color: $color-link-content;
+        &:visited {
+            color: $color-link-content-visited;
+        }
+    }
+
+    blockquote {
+        background-color: $color-gray-10;
+        padding: 1rem 2rem;
+        margin-bottom: $spacing-middle;
+    }
+
+    dl {
+        margin-bottom: $spacing-middle;
+        dd {
+            margin-bottom: 1rem;
+        }
+    }
+
+    hr {
+        border-width: 1px 0 0 0;
+        border-style: solid none none none;
+        border-color: $color-gray-20;
+        margin: $spacing-middle 0;
+    }
+
+    mark {
+        background-color: $color-gray-10;
+        padding: 0.1rem 0.5rem;
+    }
+
+    b,
+    strong,
+    dl dt {
+        color: $color-secondary;
+    }
+
+    sub,
+    sup {
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    sup {
+        top: -0.5em;
+    }
+
+    sub {
+        bottom: -0.25em;
+    }
+
+    // ----------------------------- Highlight
+    .typography--tag {
+        color: $color-gray-30;
+    }
 }
 
 .content__group {
-    padding: 2rem 0;
+    & + .content__group {
+        margin-top: $spacing-middle;
+    }
 }
 
-.content__item {
+/* .content__item {
     padding: 1rem 0;
-}
+} */

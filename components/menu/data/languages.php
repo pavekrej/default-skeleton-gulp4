@@ -10,9 +10,6 @@ $languages = [
     ],
     'en' => [
         'pages' => getPages('en')
-    ],
-    'sk' => [
-        'pages' => getPages('sk')
     ]
 ];
 ?>

@@ -25,12 +25,12 @@
 
 .menu__item-link {
     text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
+    text-transform: uppercase;
+    color: $color-gray-50;
+    font-weight: 700;
 }
 
 .menu__item-link--active {
     font-weight: 700;
+    color: $color-secondary;
 }

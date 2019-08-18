@@ -10,9 +10,6 @@ $languages = [
     ],
     'en' => [
         'title' => 'Footer'
-    ],
-    'sk' => [
-        'title' => 'Footer SK'
     ]
 ];
 ?>

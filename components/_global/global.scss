@@ -4,6 +4,12 @@
 
  */
 
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
@@ -11,41 +17,18 @@ body {
 }
 
 html {
-    @include font-size-base;
+    @include font-size;
 }
 
 body {
     background-color: $color-light;
-    font-family: $font-base;
-    font-size: 1.8rem; // 18px
-}
-
-a {
-    text-decoration: underline;
-    color: $color-link;
-
-    &:hover {
-        text-decoration: none;
-    }
+    font-family: $font-primary;
+    color: $color-primary;
+    font-size: 1.6rem; // 16px
+    line-height: 1.5;
 }
 
 ::selection {
     color: $color-light;
-    background: $color-base;
-}
-
-pre {
-    display: block;
-    box-sizing: border-box;
-    background-color: $color-debug;
-    color: $color-light;
-    font-family: sans-serif;
-    width: 100%;
-    padding: 1.5rem;
-    text-align: left;
-    margin: 1rem 0;
-
-    a:link {
-        color: $color-light;
-    }
+    background: $color-dark;
 }

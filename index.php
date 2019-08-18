@@ -12,7 +12,7 @@ include_once 'application/_functions.php';
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
         <title><?php echo (!isPage404()) ?  getPageTitle() . ' | ' . getWebTitle() : l('global', 'title-404'); ?></title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Sans:400,700&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
         <?php
         // Sources
         $source = (isDevelopEnvironment()) ? 'develop' : 'production';

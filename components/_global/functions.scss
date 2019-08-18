@@ -4,27 +4,35 @@
 
  */
 
-// ----------------------------- Container
-@mixin container {
-    max-width: $container-max-size;
-    margin: 0 auto;
-}
-
 // ----------------------------- Fonts
 // https://css-tricks.com/snippets/css/fluid-typography/
 // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 
-@mixin font-size-base {
-    // [Fluid font size from 320px to 1500px]
-    font-size: 7.77px; // +/- 14px (13.98px)
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
 
-    @media screen and (min-width: $bp-min-browser-width) {
-        font-size: calc(7.77px + 2.225 * ((100vw - 320px) / 1180));
+@mixin font-size {
+    // [Fluid font size from 320px (14px) to 1500px (16px)]
+    font-size: 8.75px; // This value must be calculated manually and represents minimum size 1.4rem
+
+    @media (min-width: $bp-min-browser-width) {
+        font-size: calc(
+            8.75px + 1.25 * ((100vw - #{$bp-min-browser-width}) / #{strip-unit($bp-xxl - $bp-min-browser-width)})
+        );
     }
 
-    @media screen and (min-width: $bp-xxl) {
-        font-size: 10px; // 18px
+    @media (min-width: $bp-xxl) {
+        font-size: 10px; // This value represents maximum size on body 1.6rem
     }
+}
+
+// ----------------------------- Container
+@mixin container {
+    max-width: $container-max-size;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 // ----------------------------- Others

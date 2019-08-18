@@ -10,8 +10,10 @@
 @import '_global/fonts';
 @import '_global/global';
 @import '_global/typography';
+@import '_global/utility';
 
 // ----------------------------- Components
+@import 'typography/style';
 @import 'message/style';
 @import 'header/style';
 @import 'menu/style';

@@ -487,7 +487,7 @@ function isDevelopEnvironment() {
 
 // Pretty print
 function pp($string) {
-    print '<pre style="display: block; box-sizing: border-box; background-color: #111111; color: #FFFFFF; font-family: sans-serif; width: 100%; padding: 1.5rem; text-align: left; margin: 1rem 0;">';
+    print '<pre style="display: block; box-sizing: border-box; background-color: #111111; color: #FFFFFF; font-family: sans-serif; width: 100%; padding: 1rem 2rem; text-align: left; margin: 1rem 0;">';
     var_dump($string);
     print '</pre>';
 }

@@ -4,6 +4,8 @@
  */
 ?>
 
-<div class="content__group">
+<div class="container">
+    <div class="content__group">
 
+    </div>
 </div>

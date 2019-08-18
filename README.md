@@ -1,9 +1,5 @@
 # README
 
-<!-- 
-README.md comment
--->
-
 ## DEFAULT SKELETON - GULP 4
 
 Requirements:
@@ -174,6 +170,9 @@ npm run stylelint-fix
 - https://developers.facebook.com/docs/sharing/webmasters
 - https://ogp.me/
 
+### README.md syntax
+- https://guides.github.com/features/mastering-markdown/
+
 ## UTILITIES & MANUALS
 
 ### Placeholder.com
@@ -184,13 +183,19 @@ npm run stylelint-fix
 - https://realfavicongenerator.net/
 
 ### Twitter Bootstrap
-- http://getbootstrap.com/
+- https://getbootstrap.com/
 
 ### W3C validator
 - https://validator.w3.org/
 
-### GEO meta tag Generator
+### GEO meta tag generator
 - http://www.geo-tag.de/generator/en.html
+
+### Czech language generator
+- https://lipsum.cz/
+
+### HTML5 tags
+- https://www.w3schools.com/tags/default.asp
 
 ## TROUBLESHOOTING
 
@@ -203,3 +208,7 @@ npm run stylelint-fix
 - Needed to comment out the line:
 - ```ProxyPass /examples ajp://127.0.0.1:8009/examples smax=0 ttl=60 retry=5```
 - in \xampp\apache\conf\extra\httpd-ajp.conf
+
+<!-- 
+README.md comment
+-->

@@ -32,20 +32,6 @@ $languages = [
             'title' => 'Welcome',
             'text' => 'This page is starter pack for building websites. It contains Frontend devstack and some reusable components.'
         ]
-    ],
-    'sk' => [
-        'js-off' => [
-            'title' => 'Outdated browser',
-            'text' => 'You are using an outdated browser. We recommend updating your browser.',
-        ],
-        'old-browser' => [
-            'title' => 'Javascript is off',
-            'text' => 'Enable Javascript for full web functionality.'
-        ],
-        'welcome' => [
-            'title' => 'Welcome SK',
-            'text' => 'SK This page is starter pack for building websites. It contains Frontend devstack and some reusable components.'
-        ]
     ]
 ];
 ?>

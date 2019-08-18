@@ -5,10 +5,8 @@
  */
 
 // ----------------------------- Colors
-$color-base: #111111;
-
-$color-primary: #dddddd;
-$color-secondary: #f1f2f3;
+$color-primary: #516163;
+$color-secondary: #111111;
 $color-tertiary: #f1f2f3;
 $color-quaternary: #f1f2f3;
 $color-fifth: #f1f2f3;
@@ -18,24 +16,40 @@ $color-light: #ffffff;
 $color-dark: #000000;
 
 // Link
-$color-link: #111111;
+$color-link: $color-secondary;
+$color-link-content: #0a2ac9;
+$color-link-content-visited: #011682;
+
+// Gray
+$color-gray-90: rgba($color-dark, 0.9);
+$color-gray-80: rgba($color-dark, 0.8);
+$color-gray-70: rgba($color-dark, 0.7);
+$color-gray-60: rgba($color-dark, 0.6);
+$color-gray-50: rgba($color-dark, 0.5);
+$color-gray-40: rgba($color-dark, 0.4);
+$color-gray-30: rgba($color-dark, 0.3);
+$color-gray-20: rgba($color-dark, 0.2);
+$color-gray-10: rgba($color-dark, 0.1);
 
 // Debug
 $color-debug: #111111;
 
-// Gray
-$color-gray-90: rgba($color-base, 0.9);
-$color-gray-80: rgba($color-base, 0.8);
-$color-gray-70: rgba($color-base, 0.7);
-$color-gray-60: rgba($color-base, 0.6);
-$color-gray-50: rgba($color-base, 0.5);
-$color-gray-40: rgba($color-base, 0.4);
-$color-gray-30: rgba($color-base, 0.3);
-$color-gray-20: rgba($color-base, 0.2);
-$color-gray-10: rgba($color-base, 0.1);
-
 // ----------------------------- Fonts
-$font-base: 'Roboto', sans-serif;
+$font-primary: 'PT Sans', sans-serif;
+$font-secondary: 'PT Sans Narrow', sans-serif;
+
+// ----------------------------- Typography
+$spacing-small: 1rem;
+$spacing-middle: 3rem;
+$spacing-large: 5rem;
+
+// Headings
+$font-size-h1: 3.2rem;
+$font-size-h2: 2.4rem;
+$font-size-h3: 1.8rem;
+$font-size-h4: 1.6rem;
+$font-size-h5: 1.6rem;
+$font-size-h6: 1.6rem;
 
 // ----------------------------- Breakpoints
 $bp-xs: 480px;
@@ -53,7 +67,7 @@ $bp-xxl: 1500px;
 $bp-min-browser-width: 320px;
 
 // ----------------------------- Container
-$container-max-size: 1180px;
+$container-max-size: 1280px;
 
 // ----------------------------- Animations
 // https://easings.net
