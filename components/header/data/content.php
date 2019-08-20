@@ -1,9 +1,8 @@
 <?php
 /**
- * CONTENT
+ * HEADER
  */
 
-// Header
 $content = [
     'cs' => [
         'description' => 'Front-end devstack šablona'

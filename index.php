@@ -40,19 +40,14 @@ include_once 'application/_functions.php';
             // MESSAGE - JS OFF
             getComponent('message', 'js-off');
 
-            // MESSAGE - WELCOME - Example of usage component with specific data
-            /*$componentContent = getContent('message', 'welcome');
-            $componentConfig = [
-                'id'    => 'welcome',
-                'type'  => 'info'
-            ];
-            $componentData = array_merge($componentContent, $componentConfig);
-            getComponent('message', 'index', $componentData);*/
+            // MESSAGE - WELCOME
+            $componentData = getComponentData('message', 'welcome');
+            getComponent('message', 'index', $componentData);
             ?>
 
             <?php
             // HEADER
-            $componentData = getContent('header');
+            $componentData = getComponentData('header');
             getComponent('header', 'index', $componentData);
 
             // HEADLINE
@@ -68,7 +63,7 @@ include_once 'application/_functions.php';
 
             <?php
             // FOOTER
-            $componentData = getContent('footer');
+            $componentData = getComponentData('footer');
             getComponent('footer', 'index', $componentData);
             ?>
         </div>

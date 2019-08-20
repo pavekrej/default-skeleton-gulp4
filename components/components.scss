@@ -13,7 +13,6 @@
 @import '_global/utility';
 
 // ----------------------------- Components
-@import 'typography/style';
 @import 'message/style';
 @import 'header/style';
 @import 'menu/style';
@@ -22,3 +21,5 @@
 @import 'content/style';
 @import 'footer/style';
 @import 'error/style';
+
+@import '_example/style';

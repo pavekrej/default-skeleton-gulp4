@@ -1,9 +1,8 @@
 <?php
 /**
- * LANGUAGE
+ * MENU
  */
 
-// Menu
 $languages = [
     'cs' => [
         'pages' => getPages('cs')

@@ -428,12 +428,13 @@ function getComponent($componentName = '', $componentFile = '', $data = []) {
     }
 }
 
-// Get content for component (languages + data)
-function getContent($componentName, $componentType = '') {
+// Get data for component (languages + data + config)
+function getComponentData($componentName, $componentType = '') {
     $fileComponentLanguages = dirname(__DIR__, 1) . '/components/' . $componentName . '/data/languages.php';
     $fileComponentContent = dirname(__DIR__, 1) . '/components/' . $componentName . '/data/content.php';
+    $fileComponentConfig = dirname(__DIR__, 1) . '/components/' . $componentName . '/data/config.php';
 
-    $languages = $content = [];
+    $languages = $content = $config = [];
 
     if (file_exists($fileComponentLanguages)) {
         include $fileComponentLanguages;
@@ -461,6 +462,20 @@ function getContent($componentName, $componentType = '') {
         }
     }
 
+    if (file_exists($fileComponentConfig)) {
+        include $fileComponentConfig;
+        try {
+            $componentConfig = (!empty($componentType)) ? $config[$componentType] : $config[$componentName];
+            if (empty($componentConfig)) {
+                throw new Exception('It is not defined component CONFIG');
+            } else {
+                $config = $componentConfig;
+            }
+        } catch (Exception $e) {
+            echo "\n", '<pre>' . $e->getMessage() . '</pre>';
+        }
+    }
+
     if (!empty($componentType) && $languages) {
         $languages = $languages[$componentType];
     }
@@ -469,12 +484,13 @@ function getContent($componentName, $componentType = '') {
         $content = $content[$componentType];
     }
 
-    $content = [
+    $componentContent = [
         'languages' => $languages,
-        'content' => $content
+        'content' => $content,
+        'config' => $config
     ];
 
-    return $content;
+    return $componentContent;
 }
 
 /* --- Debug and develop --- */

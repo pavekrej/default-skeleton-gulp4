@@ -42,12 +42,13 @@
 - [x] FB share
 - [x] Flexible font size
 - [x] Typography page + base typography
-
-- [ ] Example component
+- [x] Language/config component logic
+- [x] Example component
 - [ ] Example vendor image
 
 ------------------------
 
+- [ ] Typography best practise
 - [ ] Languages in templates
 - [ ] Default favicons
 - [ ] Default color theme

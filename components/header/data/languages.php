@@ -1,9 +1,8 @@
 <?php
 /**
- * LANGUAGE
+ * HEADER
  */
 
-// Header
 $languages = [
     'cs' => [
         'title' => 'DELAMWEBY.cz'

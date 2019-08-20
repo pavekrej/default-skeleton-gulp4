@@ -5,14 +5,9 @@
 ?>
 
 <!--[if IE]>
-<?php
-// MESSAGE
-$content = getContent('message', 'old-browser');
-    $componentConfig = [
-        'id'    => 'old-browser',
-        'type'  => 'error'
-    ];
-$data = array_merge($content, $componentConfig);
-getComponent('message', 'index', $data);
-?>
+    <?php
+    // MESSAGE
+    $componentData = getComponentData('message', 'old-browser');
+    getComponent('message', 'index', $componentData);
+    ?>
 <![endif]-->

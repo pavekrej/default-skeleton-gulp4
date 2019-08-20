@@ -5,5 +5,5 @@
  */
 
 // ----------------------------- Components
-import message from '../components/message/script.js';
-message();
+import example from '../components/_example/script.js';
+example();

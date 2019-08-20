@@ -5,14 +5,9 @@
 ?>
 
 <noscript>
-<?php
-// MESSAGE
-$content = getContent('message', 'js-off');
-$componentConfig = [
-    'id'    => 'js-off',
-    'type'  => 'warning'
-];
-$data = array_merge($content, $componentConfig);
-getComponent('message', 'index', $data);
-?>
+    <?php
+    // MESSAGE
+    $componentData = getComponentData('message', 'js-off');
+    getComponent('message', 'index', $componentData);
+    ?>
 </noscript>

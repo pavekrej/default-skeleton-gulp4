@@ -10,48 +10,28 @@
         <div class="content__item">
             <?php
             // MESSAGE
-            $componentContent = getContent('message', 'welcome');
-            $componentConfig = [
-                'id'    => 'info',
-                'type'  => 'info'
-            ];
-            $componentData = array_merge($componentContent, $componentConfig);
+            $componentData = getComponentData('message', 'info');
             getComponent('message', 'index', $componentData);
             ?>
         </div>
         <div class="content__item">
             <?php
             // MESSAGE
-            $componentContent = getContent('message', 'welcome');
-            $componentConfig = [
-                'id'    => 'success',
-                'type'  => 'success'
-            ];
-            $componentData = array_merge($componentContent, $componentConfig);
+            $componentData = getComponentData('message', 'success');
             getComponent('message', 'index', $componentData);
             ?>
         </div>
         <div class="content__item">
             <?php
             // MESSAGE
-            $componentContent = getContent('message', 'welcome');
-            $componentConfig = [
-                'id'    => 'warning',
-                'type'  => 'warning'
-            ];
-            $componentData = array_merge($componentContent, $componentConfig);
+            $componentData = getComponentData('message', 'warning');
             getComponent('message', 'index', $componentData);
             ?>
         </div>
         <div class="content__item">
             <?php
             // MESSAGE
-            $componentContent = getContent('message', 'welcome');
-            $componentConfig = [
-                'id'    => 'error',
-                'type'  => 'error'
-            ];
-            $componentData = array_merge($componentContent, $componentConfig);
+            $componentData = getComponentData('message', 'error');
             getComponent('message', 'index', $componentData);
             ?>
         </div>
@@ -61,7 +41,7 @@
         <h2>Error</h2>
         <div class="content__item">
             <?php
-            // ERROR
+            // ERROR - 404
             getComponent('error', '404');
             ?>
         </div>

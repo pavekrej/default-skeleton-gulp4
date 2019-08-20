@@ -12,21 +12,18 @@
                 <?php echo $data['languages']['title']; ?>
             </a>
         </h1>
-        <?php /*<div class="header__subtitle"><?php echo $data['content']['description']; ?></div>*/ ?>
-
         <div class="navigation__container">
             <?php
             // MENU
-            $componentData = getContent('menu');
+            $componentData = getComponentData('menu');
             getComponent('menu', 'index', $componentData);
             ?>
 
             <?php
             // LANGUAGE
-            $componentData = getContent('language', 'languages');
+            $componentData = getComponentData('language', 'languages');
             getComponent('language', 'index', $componentData);
             ?>
         </div>
     </div>
-
 </header>

@@ -6,7 +6,7 @@
 
 // ----------------------------- Variables
 
-/* $color-warning: #9f6000;
+$color-warning: #9f6000;
 $color-warning-light: #feefb3;
 $color-error: #d8000c;
 $color-error-light: #ffbaba;
@@ -100,7 +100,7 @@ $transition-middle: 0.25s;
     }
 }
 
-.message--warning {
+.message__warning {
     background-color: $color-warning-light;
     color: $color-warning;
 
@@ -110,7 +110,7 @@ $transition-middle: 0.25s;
     }
 }
 
-.message--error {
+.message__error {
     background-color: $color-error-light;
     color: $color-error;
 
@@ -120,7 +120,7 @@ $transition-middle: 0.25s;
     }
 }
 
-.message--success {
+.message__success {
     background-color: $color-success-light;
     color: $color-success;
 
@@ -130,7 +130,7 @@ $transition-middle: 0.25s;
     }
 }
 
-.message--info {
+.message__info {
     background-color: $color-info-light;
     color: $color-info;
 
@@ -139,4 +139,3 @@ $transition-middle: 0.25s;
         background-color: $color-info;
     }
 }
-*/

@@ -9,10 +9,6 @@
     padding-bottom: 3rem;
 }
 
-.header__container {
-    //aaa
-}
-
 .navigation__container {
     display: flex;
     align-items: baseline;
@@ -32,10 +28,4 @@
 
 .header__link {
     text-decoration: none;
-}
-
-.header__subtitle {
-    font-size: 1.4rem;
-    color: $color-gray-50;
-    margin-left: 1rem;
 }

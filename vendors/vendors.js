@@ -5,9 +5,9 @@
  */
 
 // ----------------------------- jQuery
-import $ from '../node_modules/jquery/dist/jquery';
+import $ from '../node_modules/jquery/dist/jquery.slim';
 console.log('Hello jQuery from npm manager!');
 
 // ----------------------------- Example vendor
-import exampleVendor from '../vendors/example-vendor/script.js';
-exampleVendor();
+import example from '../vendors/_example/script.js';
+example();

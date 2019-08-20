@@ -1,9 +1,8 @@
 <?php
 /**
- * LANGUAGES
+ * FOOTER
  */
 
-// Footer
 $languages = [
     'cs' => [
         'title' => 'Patička'

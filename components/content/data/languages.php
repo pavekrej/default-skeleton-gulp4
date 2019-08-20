@@ -1,9 +1,8 @@
 <?php
 /**
- * LANGUAGES
+ * CONTENT
  */
 
-// Content
 $languages = [
     'cs' => [
         'typography-main' =>

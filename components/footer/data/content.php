@@ -1,9 +1,8 @@
 <?php
 /**
- * CONTENT
+ * FOOTER
  */
 
-// Footer
 $content = [
     'cs' => [
         'description' => 'Front-end devstack šablona'

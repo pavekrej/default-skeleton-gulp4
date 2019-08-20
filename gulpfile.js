@@ -413,7 +413,7 @@ var developBuild = gulp.parallel(watch);
 gulp.task('WATCH', developBuild);
 
 gulp.task('build:DEVELOP:IMAGES', developImages);
-gulp.task('build:DEVELOP:VENDORS', gulp.series(deleteDevelopVendors, developVendorsAssets, developVendorsCSS));
+gulp.task('build:DEVELOP:VENDORS', gulp.series(deleteDevelopVendors, developVendorsAssets, developVendorsCSS, developVendorsJS));
 
 gulp.task('delete:develop:images', deleteDevelopImages);
 gulp.task('delete:build', deleteBuild);

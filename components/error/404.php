@@ -1,3 +1,8 @@
+<?php
+/**
+ * ERROR - 404
+ */
+?>
 
 <div class="error">
     <p class="error__title">#404</p>
